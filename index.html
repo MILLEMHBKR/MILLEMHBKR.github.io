@@ -80,6 +80,56 @@ body.bodystyle {
    overflow: hidden;
    width: 100%;
 }
+/* Button Hover */
+.buttonmodule {
+  border-radius: 0px;
+  background-color: #fff;
+  height: 300px;
+  width: 600px;
+  border: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+.buttonwhite {
+  border-radius: 0px;
+  background-color: #fff;
+  border: none;
+  color: #282828;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  height: 300px;
+  width: 300px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 0px;
+  float: left;
+}
+.buttonwhite span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.buttonwhite span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.buttonwhite:hover span {
+  padding-right: 25px;
+}
+
+.buttonwhite:hover span:after {
+  opacity: 1;
+  right: 0;
+}
 
 .flex {
  display: flex;
@@ -148,13 +198,13 @@ Dragon's Word features a huge dictionary of words and definitions, adorable art 
 You'll have fun; Dragon's Word!
 </p>
 <br>
-</section
 <br>
 <hr style="width:600px">
 <br>
+</section>
 <div class="Footersectionbg">
   <br>
-<button class="btn PP" title="Private Policy Button" onclick=" window.open('https://kmonson.github.io/codemonic_beta/privatepolicy.html','_blank')">Click Here for Private Policy</button>
+<button class="buttonwhite" title="Private Policy Button" onclick=" window.open('https://kmonson.github.io/codemonic_beta/privatepolicy.html','_blank')"><span>Click Here for Private Policy</span></button>
 <br>
 </div>
 </body>
