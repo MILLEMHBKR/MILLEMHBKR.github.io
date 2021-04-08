@@ -54,25 +54,25 @@ body.bodystyle {
 }
 
  /* BG Section Colors */
-.headersectionbg {
+ #headersectionbg {
    background-color: #9addcd;
    min-height: 100px;
    width: 100%;
 }
 
-.AppStoresectionbg {
+#AppStoresectionbg {
    background-color: #6f8f57;
    min-height: 100px;
    width: 100%;
 }
 
-.AboutContentsectionbg {
+#AboutContentsectionbg {
    background-color: #5eab62;
    min-height: 100px;
    width: 100%;
 }
 
-.Footersectionbg {
+#Footersectionbg {
    background-color: #bcd87b;
    min-height: 100px;
    width: 100%;
@@ -161,12 +161,13 @@ img.rounded-corners {
 </style>
 </head>
 <body class="bodystyle">
-  <div class="headersectionbg">
+  <div id="headersectionbg">
 <img src="https://github.com/kmonson/codemonic_beta/blob/master/docs/App_Icon_Top.png?raw=true" class="rounded-corners" alt="App Icon" style="width:200px">
 <h1 class="titlefont">WELCOME TO DRAGON'S WORD!</h1>
 <p style="font-size:18px"><i>Edword the Dragon is cute, cuddly, and in big trouble! Can you help him turn a jumble of magical letters into a chain of powerful words?</i></p>
 </div>
-<div class="flex social-btns AppStoresectionbg">
+<div class="flex social-btns">
+  <div id="AppStoresectionbg">
   <a class="app-btn blu flex vert" href="http:apple.com">
     <i class="fab fa-apple"></i>
     <p>Available on the <br/> <span class="big-txt">App Store</span></p>
@@ -175,8 +176,9 @@ img.rounded-corners {
     <i class="fab fa-google-play"></i>
     <p>Get it on <br/> <span class="big-txt">Google Play</span></p>
   </a>
-</div>
-<section class="AboutBG AboutContentsectionbg">
+</div></div>
+<section class="AboutBG">
+  <div id="AboutContentsectionbg">
 <h1 class="titlefont">About Dragon's Word</h1>
 <img src="https://i.ibb.co/CsnTvL0/MENU-DRAFT-no-tile-ex.png" alt="Screenshot Dragon's Word" style="width:200px">
 <img src="https://i.ibb.co/5WVkgTg/selection-screen-new-icons.png" alt="Screenshot Dragon's Word" style="width:200px">
@@ -191,8 +193,9 @@ Dragon's Word features a huge dictionary of words and definitions, adorable art 
 <p>
 You'll have fun; Dragon's Word!
 </p>
+</div>
 </section>
-<div class="Footersectionbg">
+<div id="Footersectionbg">
 <button class="buttonwhite" title="Private Policy Button" onclick=" window.open('https://kmonson.github.io/codemonic_beta/privatepolicy.html','_blank')" style="color:#6f8f57;"><span>CLICK HERE FOR PRIVATE POLICY</span></button>
 </div>
 </body>
