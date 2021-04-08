@@ -43,7 +43,22 @@ body.bodystyle {
 }
 
 /* Side by Side Images */
+* {
+  box-sizing: border-box;
+}
 
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 
  /* Wave Code */
 #wave {
@@ -210,9 +225,20 @@ img.rounded-corners {
 <section class="AboutBG">
   <div id="AboutContentsectionbg">
 <h1 class="titlefont">About Dragon's Word</h1>
-<img src="https://i.ibb.co/CsnTvL0/MENU-DRAFT-no-tile-ex.png" alt="Screenshot Dragon's Word" style="width:200px">
-<img src="https://i.ibb.co/5WVkgTg/selection-screen-new-icons.png" alt="Screenshot Dragon's Word" style="width:200px">
-<img src="https://i.ibb.co/CsnTvL0/MENU-DRAFT-no-tile-ex.png" alt="Screenshot Dragon's Word" style="width:200px">
+<div class="row">
+  <div class="column">
+    <img src="img_snow.jpg" alt="Snow" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="img_forest.jpg" alt="Forest" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="img_mountains.jpg" alt="Mountains" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="img_mountains.jpg" alt="Mountains" style="width:100%">
+  </div>
+</div>
 <p>
 Guide your pet dragon on a word-find quest the likes of which you've never experienced before, and test your vocabulary, strategy, and pattern-finding skills along the way. Spot words, chain words, overlap words, and reuse your most valuable letters to boost your score into the stratosphere. 
 </p>
