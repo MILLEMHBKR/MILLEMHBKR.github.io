@@ -22,8 +22,63 @@ body.bodystyle {
   margin: 0 auto;
 }
 
+ /* Wave Code */
+#wave {
+  position: relative;
+  height: 70px;
+  width: 600px;
+  background: #e0efe3;
+}
+#wave:before {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 100% 50%;
+  width: 340px;
+  height: 80px;
+  background-color: white;
+  right: -5px;
+  top: 40px;
+}
+#wave:after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 100% 50%;
+  width: 300px;
+  height: 70px;
+  background-color: #e0efe3;
+  left: 0;
+  top: 27px;
+}
+
+ /* BG Section Colors */
 .headersectionbg {
    background-color: #9addcd;
+   min-height: 100px;
+   overflow: hidden;
+   width: 100%;
+   height: 400px;
+}
+
+.AppStoresectionbg {
+   background-color: #6f8f57;
+   min-height: 100px;
+   overflow: hidden;
+   width: 100%;
+   height: 400px;
+}
+
+.AboutContentsectionbg {
+   background-color: #5eab62;
+   min-height: 100px;
+   overflow: hidden;
+   width: 100%;
+   height: 400px;
+}
+
+.Footersectionbg {
+   background-color: #bcd87b;
    min-height: 100px;
    overflow: hidden;
    width: 100%;
@@ -69,7 +124,7 @@ img.rounded-corners {
 <hr style="width:600px">
 </div>
 <br>
-<div class="flex social-btns">
+<div class="flex social-btns" class="AppStoresectionbg">
   <a class="app-btn blu flex vert" href="http:apple.com">
     <i class="fab fa-apple"></i>
     <p>Available on the <br/> <span class="big-txt">App Store</span></p>
@@ -79,7 +134,7 @@ img.rounded-corners {
     <p>Get it on <br/> <span class="big-txt">Google Play</span></p>
   </a>
 </div>
-<section class="AboutBG">
+<section class="AboutBG" class="AboutContentsectionbg">
 <h1 class="titlefont">About Dragon's Word</h1>
 <br>
 <img src="https://i.ibb.co/CsnTvL0/MENU-DRAFT-no-tile-ex.png" alt="Screenshot Dragon's Word" style="width:200px">
@@ -100,8 +155,10 @@ You'll have fun; Dragon's Word!
 </section
 <br>
 <hr style="width:600px">
+<div class="Footersectionbg"></div>
 <br>
 <button class="btn PP" title="Private Policy Button" onclick=" window.open('https://kmonson.github.io/codemonic_beta/privatepolicy.html','_blank')">Click Here for Private Policy</button>
 <br>
+</div>
 </body>
 </html>
