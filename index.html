@@ -30,13 +30,17 @@ body.bodystyle {
   margin: 0 auto;
 }
 /* App and Play Store Buttons */
-.applestorebutton{
+#applestorebutton{
     width: 300px;
-    height: 40px;
+    background-image: url('https://github.com/MILLEMHBKR/MILLEMHBKR.github.io/blob/master/google-play-badge.png?raw=true');
+    background-size: cover;
+   background-color: #eee;
 }
-.playstorebutton{
+#playstorebutton{
     width: 300px;
-    height: 40px;
+    background-image: url('https://github.com/MILLEMHBKR/MILLEMHBKR.github.io/blob/master/google-play-badge.png?raw=true');
+    background-size: cover;
+   background-color: #eee;
 }
 .storebuttonscontainer{
     text-align: center;
@@ -239,16 +243,12 @@ img.rounded-corners {
 <h1 class="titlefont">WELCOME TO DRAGON'S WORD!</h1>
 <p style="font-size:18px"><i>Edword the Dragon is cute, cuddly, and in big trouble! Can you help him turn a jumble of magical letters into a chain of powerful words?</i></p>
 </div>
-<div class="flex social-btns">
+<div class="storebuttonscontainer">
   <div id="AppStoresectionbg">
-  <a class="app-btn blu flex vert" href="http:apple.com">
-    <i class="fab fa-apple"></i>
-    <p>Available on the <br/> <span class="big-txt">App Store</span></p>
-  </a>
-  <a class="app-btn blu flex vert" href="http:google.com">
-    <i class="fab fa-google-play"></i>
-    <p>Get it on <br/> <span class="big-txt">Google Play</span></p>
-  </a>
+    <div class="storebuttonscontainer">
+    <button id="applestorebutton">click me</button>
+    <button id="playstorebutton">click me</button>
+  </div>
 </div></div>
 <section class="AboutBG">
   <div id="AboutContentsectionbg">
