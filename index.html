@@ -49,7 +49,7 @@ body.bodystyle {
 
 .column {
   float: left;
-  max-width: 50%;
+  max-width: 25%;
   padding: 20px;
 }
 
@@ -203,7 +203,35 @@ img.rounded-corners {
 
 .PP {color: #569a5a;}
 
-</style>
+</style>]
+  <!--[if !mso]><!-->
+    <style type="text/css">
+      @media only screen and (max-width:480px) {
+        @-ms-viewport {
+          width: 320px;
+        }
+        @viewport {
+          width: 320px;
+        }
+      }
+  /* Side by Side Images */
+  * {
+     box-sizing: border-box;
+  }
+
+  .column {
+    float: left;
+    max-width: 50%;
+    padding: 20px;
+  }
+
+  /* Clearfix (clear floats) */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }  
+    </style>
 </head>
 <body class="bodystyle">
   <div id="headersectionbg">
