@@ -108,7 +108,8 @@ body.bodystyle {
    padding-bottom: 50px;
    min-height: 100px;
    width: 100%;
-   position: relative;
+   display: grid;
+   height: 100%;
 }
 
 #AppStoresectionbg {
@@ -135,7 +136,20 @@ body.bodystyle {
    width: 100%;
 }
 /* Div Wrapper to make Grass Dividers */
-.inner-content img {
+* {
+  margin: 0;
+  padding: 0;
+}
+.imgbox {
+  display: grid;
+  height: 100%;
+}
+.center-fit {
+  max-width: 100%;
+  max-height: 100vh;
+  margin: auto;
+}
+/*.inner-content img {
     width: 100%;
     position: absolute;
     overflow: hidden;
